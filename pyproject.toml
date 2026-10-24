@@ -1,13 +1,9 @@
 [project]
 name = "speakinpy"
-version = "0.1.0"
-description = "Add your description here"
+version = "0.1.2"
+description = "A Python module for recorded audio transcription via Gemini API"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "google-genai>=2.33.0",
-    "mss>=10.2.0",
-    "opencv-python>=5.0.0.93",
-    "pillow>=13.0.0",
-    "pyaudio>=0.2.14",
 ]
