@@ -21,23 +21,3 @@ audio_path = "path/to/audio.m4a"
 text = transcribe(audio_path, GEMINI_API_KEY)
 print(text)
 ```
-
-## Release / PyPI publishing
-
-1. Build artifacts locally:
-   ```bash
-   python -m pip install --upgrade build twine
-   python -m build
-   python -m twine check dist/*
-   ```
-2. Validate artifacts:
-   - inspect `dist/*.whl` and `dist/*.tar.gz`
-   - install the wheel in a clean virtual environment (`pip install --no-deps dist/*.whl`)
-3. Configure Trusted Publishing in both PyPI and TestPyPI for this repository and workflow:
-   - workflow: `.github/workflows/publish.yml`
-   - environment: `pypi` (production) and optional `testpypi`
-4. Create and publish a GitHub release/tag from `main`.
-   - release publication triggers automatic PyPI publish via OIDC (no API token required)
-   - optional manual `workflow_dispatch` can publish to TestPyPI
-
-The `examples/` directory (including sample audio files) is intentionally excluded from published distributions.
