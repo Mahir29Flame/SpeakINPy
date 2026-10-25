@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "TranscribeNPy"
-version = "0.1.0"
+version = "0.1.2"
 description = "A Python module for recorded audio transcription via Wispr with groq API"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -18,4 +18,4 @@ include-package-data = false
 
 [tool.setuptools.packages.find]
 where = ["src"]
-include = ["speakinpy"]
+include = ["transcribenpy"]
