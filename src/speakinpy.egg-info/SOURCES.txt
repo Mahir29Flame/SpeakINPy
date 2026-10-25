@@ -3,7 +3,7 @@ MANIFEST.in
 README.md
 pyproject.toml
 src/speakinpy/__init__.py
-src/speakinpy/recorded.py
+src/speakinpy/core.py
 src/speakinpy.egg-info/PKG-INFO
 src/speakinpy.egg-info/SOURCES.txt
 src/speakinpy.egg-info/dependency_links.txt

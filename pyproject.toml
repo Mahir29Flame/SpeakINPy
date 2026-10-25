@@ -3,13 +3,13 @@ requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "speakinpy"
-version = "0.1.2"
-description = "A Python module for recorded audio transcription via Gemini API"
+name = "TranscribeNPy"
+version = "0.1.0"
+description = "A Python module for recorded audio transcription via Wispr with groq API"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "google-genai>=2.33.0",
+    "groq>=1.7.0",
 ]
 
 [tool.setuptools]

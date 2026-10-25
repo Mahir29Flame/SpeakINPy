@@ -1,23 +1,23 @@
-# SpeakINPy
-A python module for transcribing audio files to text via Google GenAI
+# TranscribeNPy
+A python module for transcribing audio files to text via Groq's Whisper-Large-v3/Whisper-Large-v3-turbo
 
 ## Installation
 ```bash
-pip install SpeakINPy
+pip install TranscribeNPy
 ```
 or via UV:
 ```bash
-uv add SpeakINPy
+uv add TranscribeNPy
 ```
 
 ## Usage
 ```python
-from speakinpy import transcribe
+from transcribenpy import transcribe
 import os
 
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
-audio_path = "path/to/audio.m4a"
+API_KEY = os.environ.get("GROQ_API_KEY")
+audio_path = "samples/audio.wav"
 
-text = transcribe(audio_path, GEMINI_API_KEY)
+text = transcribe(API_KEY, audio_path)
 print(text)
 ```
