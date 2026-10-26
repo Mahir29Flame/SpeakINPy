@@ -1,5 +1,6 @@
 # TranscribeNPy
-A python module for transcribing audio files to text via Groq's Whisper-Large-v3/Whisper-Large-v3-turbo
+A python module for transcribing audio files to text via Groq's Whisper-Large-v3/Whisper-Large-v3-turbo\
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/transcribenpy?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=Downloads)](https://pepy.tech/projects/transcribenpy)
 
 ## Installation
 ```bash
